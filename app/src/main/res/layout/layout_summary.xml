@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+    <TextView
+        android:layout_width="match_parent"
+        android:text="   .总结"
+        android:gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_sum"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="   .心得"
+        android:gravity="center_vertical"
+        android:layout_height="30dp"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_get"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="   .special event"
+        android:layout_height="30dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <EditText
+        android:id="@+id/edit_special"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="top"
+        android:layout_marginBottom="2dp"
+        android:background="@color/white"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_marginBottom="@dimen/btns_margin"
+            rv_centered="true">
+
+            <Button
+                android:id="@+id/btn_summary_yes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"/>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginBottom="@dimen/btns_margin"
+            android:layout_marginRight="@dimen/btns_margin"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/btn_summary_no"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/lightGray"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

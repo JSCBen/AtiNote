@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">AtiNote</string>
+    <string name="version">version 1.0</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="your_name">Your Name Here</string>
+    <string name="log_on">未登录</string>
+    <string name="log_pos">登录账号</string>
+    <string name="title_activity_launch_screen">LaunchScreenActivity</string>
+    <string name="nav_item0">一日记录</string>
+    <string name="nav_item1">一周印象</string>
+    <string name="nav_item2">数据分析</string>
+    <string name="setting">个人设置</string>
+    <string name="dataSync">数据同步</string>
+    <string name="aboutUs">关于我们</string>
+    <string name="feedBack">意见反馈</string>
+    <string name="colorSetting">颜色设置</string>
+    <string name="text_item0">高效工作</string>
+    <string name="text_item1">畅快地玩</string>
+    <string name="text_item2">放松休息</string>
+    <string name="text_item3">强制工作</string>
+    <string name="text_item4">浪费拖延</string>
+    <string name="shake_to_share">摇一摇分享记录</string>
+    <string name="feedBackText">留下你的宝贵建议</string>
+    <string name="feedBackEmail">Email (方便我们回复你，选填~)</string>
+    <string name="textView_dataSync">将为您转存至Excel表格至</string>
+    <string name="editText_dataSync">Email:  Username@xmail.com</string>
+    <string name="sorry_wait">阿嚏！耐心点！该功能正在开发！</string>
+    <string name="mes_log">阿嚏！AtiNote目前仅支持快速登录！</string>
+    <string name="make_sure">阿嚏！客官，你确定删除这条记录？</string>
+    <string name="title_activity_setting">SettingActivity</string>
+    <string name="title_activity_week_view">WeekViewActivity</string>
+    <string name="title_activity_about_us">AboutUsActivity</string>
+    <string name="title_activity_feedback">FeedbackActivity</string>
+    <string name="title_activity_data_view">DataViewActivity</string>
+    <string name="title_activity_data_sync">DataSyncActivity</string>
+    <string name="title_activity_log_in">LogInActivity</string>
+    <string name="title_activity_color_setting">ColorSettingActivity</string>
+    <string name="title_activity_screen_lock">ScreenLockActivity</string>
+
+</resources>

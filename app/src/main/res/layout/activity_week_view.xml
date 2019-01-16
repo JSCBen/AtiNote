@@ -1,0 +1,68 @@
+<LinearLayout
+    android:id="@+id/layout_weekView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    tools:context="com.tju.twist.atinote.WeekViewActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btn_weekView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:text="@string/nav_item1"/>
+
+        <ImageView
+            android:id="@+id/btn_weekView_share"
+            android:layout_width="@dimen/shake_icon_size"
+            android:layout_height="@dimen/shake_icon_size"
+            android:layout_marginRight="@dimen/btns_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_shake"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="6dp">
+        <com.alamkanak.weekview.WeekView
+            android:id="@+id/weekView0"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:eventTextColor="@color/white"
+            app:textSize="12sp"
+            app:hourHeight="60dp"
+            app:headerColumnPadding="8dp"
+            app:headerColumnTextColor="#8f000000"
+            app:headerRowPadding="12dp"
+            app:columnGap="8dp"
+            app:noOfVisibleDays="3"
+            app:headerRowBackgroundColor="#ffefefef"
+            app:dayBackgroundColor="#05000000"
+            app:todayBackgroundColor="#1848adff"
+            app:headerColumnBackground="#ffffffff"/>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/edit_text_name"
+        android:hint="标题"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <EditText
+        android:id="@+id/edit_text_content"
+        android:hint="详述"
+        android:gravity="top"
+        android:layout_width="match_parent"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_weight="1"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_marginBottom="@dimen/btns_margin"
+            rv_centered="true">
+
+            <Button
+                android:id="@+id/yesButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="确定"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/colorAccent"/>
+
+        </com.andexert.library.RippleView>
+
+        <com.andexert.library.RippleView
+            android:layout_width="match_parent"
+            android:layout_height="?android:actionBarSize"
+            android:layout_marginBottom="@dimen/btns_margin"
+            android:layout_marginRight="@dimen/btns_margin"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/noButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="取消"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@color/lightGray"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+
+</LinearLayout>

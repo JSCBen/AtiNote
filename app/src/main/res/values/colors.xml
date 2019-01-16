@@ -1,0 +1,48 @@
+<resources>
+    <!--Theme Blue-->
+    <color name="colorPrimary">#363642</color>
+    <color name="colorPrimaryDark">#333</color>
+    <!--Theme Gray>-->
+    <color name="colorAccent">#2b92f9</color>
+
+    <color name="lightGray">#c6c4cc</color>
+    <color name="backgroundGray">#f4f4f4</color>
+    <color name="white">#ffffff</color>
+
+    <color name="color0">#0d5ab7</color>
+    <color name="color1">#2b92f9</color>
+    <color name="color2">#8fbaf9</color>
+    <color name="color3">#8b8bbc</color>
+    <color name="color4">#414156</color>
+
+    <color name="color00">#822fa5</color>
+    <color name="color01">#ae50cc</color>
+    <color name="color02">#ce8cf4</color>
+    <color name="color03">#959db5</color>
+    <color name="color04">#353847</color>
+
+    <color name="color10">#e475ea</color>
+    <color name="color11">#fcde63</color>
+    <color name="color12">#8ec3ef</color>
+    <color name="color13">#5f8087</color>
+    <color name="color14">#474368</color>
+
+    <color name="red">#f00</color>
+
+</resources>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

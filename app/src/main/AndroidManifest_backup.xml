@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tju.twist.atinote"
+    android:largeHeap="true" >
+
+    <uses-permission android:name="android.permission.write_external_storage" />
+    <uses-permission android:name="android.permission.mount_unmount_filesystems" />
+    <uses-permission android:name="ANDROID.PERMISSION.WAKE_LOCK"/>
+    <uses-permission android:name="ANDROID.PERMISSION.DISABLE_KEYGUARD"/>
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <!--<code class="code">-->
+        <!--<uses-permission android:name="android.permission.INTERNET"/>-->
+        <!--<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>-->
+        <!--<uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>-->
+        <!--<uses-permission android:name="android.permission.READ_PHONE_STATE"/>-->
+        <!--<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>-->
+    <!--</code>-->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".LaunchScreenActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SettingActivity"
+            android:label="@string/title_activity_setting" >
+        </activity>
+        <activity
+            android:name=".WeekViewActivity"
+            android:label="@string/title_activity_week_view" >
+        </activity>
+        <!--<activity-->
+            <!--android:name=".wxapi.WXEntryActivity"-->
+            <!--android:theme="@android:style/Theme.Translucent.NoTitleBar"-->
+            <!--android:configChanges="keyboardHidden|orientation|screenSize"-->
+            <!--android:exported="true"-->
+            <!--android:screenOrientation="portrait" />-->
+        <activity
+            android:name=".AboutUsActivity"
+            android:label="@string/title_activity_about_us" >
+        </activity>
+        <activity
+            android:name=".FeedbackActivity"
+            android:label="@string/title_activity_feedback" >
+        </activity>
+        <activity
+            android:name=".DataViewActivity"
+            android:label="@string/title_activity_data_view" >
+        </activity>
+        <activity
+            android:name=".DataSyncActivity"
+            android:label="@string/title_activity_data_sync" >
+        </activity>
+        <activity
+            android:name=".LogInActivity"
+            android:label="@string/title_activity_log_in" >
+        </activity>
+        <activity
+            android:name=".ColorSettingActivity"
+            android:label="@string/title_activity_color_setting" >
+        </activity>
+        <activity
+            android:name=".ScreenLockActivity"
+            android:label="@string/title_activity_screen_lock" >
+        </activity>
+
+        <!--<receiver android:name="com.tju.twist.utils.ScreenListener">-->
+            <!--<intent-filter>-->
+                <!--<action android:name="android.intent.action.SCREEN_OFF"/>-->
+                <!--<category android:name="android.intent.category.DEFAULT"/>-->
+            <!--</intent-filter>-->
+        <!--</receiver>-->
+
+    </application>
+
+</manifest>

@@ -1,0 +1,138 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@color/colorPrimaryDark"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tju.twist.atinote.LogInActivity">
+
+    <RelativeLayout
+        android:id="@+id/toolbar_log_in"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size">
+        <ImageView
+            android:id="@+id/btn_log_cancel"
+            android:src="@drawable/ic_log_cancel"
+            android:layout_width="@dimen/icon_size"
+            android:layout_height="@dimen/icon_size"
+            android:layout_alignParentLeft="true"/>
+        <ImageView
+            android:id="@+id/btn_log_forget"
+            android:src="@drawable/ic_log_forget"
+            android:layout_width="100dp"
+            android:layout_height="@dimen/icon_size"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_below="@id/toolbar_log_in"
+        android:layout_marginTop="50dp"
+        android:orientation="vertical"
+        android:gravity="clip_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout">
+
+        <ImageView
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_log_title"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/icon_size" />
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size">
+
+            <ImageView
+                android:src="@drawable/ic_log_mail"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:id="@+id/edit_log_email"
+                android:background="@color/backgroundGray"
+                android:layout_marginRight="5dp"
+                android:hint="邮箱"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textEmailAddress"
+                android:ems="10" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_gravity="center_horizontal"
+            android:background="@drawable/rectangle"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size">
+
+            <ImageView
+                android:src="@drawable/ic_log_password"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="15dp"
+                android:layout_width="35dp"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:id="@+id/edit_log_password"
+                android:background="@color/backgroundGray"
+                android:layout_marginRight="5dp"
+                android:hint="密码"
+                android:layout_gravity="center_horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:inputType="textPassword"
+                android:ems="10" />
+
+        </LinearLayout>
+
+        <com.andexert.library.RippleView
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/icon_size"
+            rv_centered="true">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="登录"
+                android:textSize="15sp"
+                android:textColor="@color/white"
+                android:background="@drawable/rectangle_button"/>
+
+        </com.andexert.library.RippleView>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/icon_size">
+        <ImageView
+            android:id="@+id/btn_log_register"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/ic_log_register"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+
+
+
+</RelativeLayout>

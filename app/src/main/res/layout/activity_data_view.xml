@@ -1,0 +1,90 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    tools:context="com.tju.twist.atinote.DataViewActivity">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btn_dataView_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_main"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:text="@string/nav_item2"/>
+
+        <ImageView
+            android:id="@+id/btn_dataView_shake"
+            android:layout_width="@dimen/shake_icon_size"
+            android:layout_height="@dimen/shake_icon_size"
+            android:layout_marginRight="@dimen/btns_margin"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/icon_shake"/>
+
+    </RelativeLayout>
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher"
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/layout_pie"/>
+        <include layout="@layout/layout_bar"/>
+
+    </ViewSwitcher>
+
+    <LinearLayout
+        android:id="@+id/layout_switchButton"
+        android:background="@color/backgroundGray"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="54dp">
+
+        <Button
+            android:id="@+id/btn_dataView0"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginLeft="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_right"
+            android:text="饼图"
+            android:textColor="@color/selector_buttons_text"
+            />
+
+        <Button
+            android:id="@+id/btn_dataView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginRight="80dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/selector_buttons_text"
+            android:text="趋势"
+            android:background="@drawable/selector_btn_left"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

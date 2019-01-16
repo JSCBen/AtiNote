@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundGray"
+    tools:context="com.tju.twist.atinote.AboutUsActivity">
+
+    <LinearLayout
+        android:id="@+id/toolbar_about_us"
+        android:layout_alignParentTop="true"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:id="@+id/btn_aboutUs_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="26dp"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:text="@string/aboutUs"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@id/toolbar_about_us"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_about_us"
+        android:gravity="center"
+        />
+
+    <TextView
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="15dp"
+        android:textColor="@color/lightGray"
+        android:text="@string/version" />
+
+</RelativeLayout>

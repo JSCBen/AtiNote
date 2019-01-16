@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:largeHeap="true" package="com.tju.twist.atinote">
+
+    <uses-permission android:name="android.permission.write_external_storage"/>
+    <uses-permission android:name="android.permission.mount_unmount_filesystems"/>
+    <uses-permission android:name="ANDROID.PERMISSION.WAKE_LOCK"/>
+    <uses-permission android:name="ANDROID.PERMISSION.DISABLE_KEYGUARD"/>
+
+    <!-- ###################声明SDK使用的相关权限###################### -->
+    <!-- 检测网络状态 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <!-- 获取mac地址作为用户的备用唯一标识 -->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <!-- 获取用户手机的IMEI，用来唯一的标识用户 -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <!-- 缓存资源优先存入SDcard -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <!-- 允许应用程序联网，以便向我们的服务器端发送数据 -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- QQ、QQ空间所需权限 -->
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <!--语音通话功能权限-->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <application android:allowBackup="true" android:icon="@mipmap/ic_launcher" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name=".MainActivity">
+        </activity>
+        <activity android:label="@string/app_name" android:name=".LaunchScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:label="@string/title_activity_setting" android:name=".SettingActivity">
+        </activity>
+        <activity android:label="@string/title_activity_week_view" android:name=".WeekViewActivity">
+        </activity>
+        <activity android:label="@string/title_activity_about_us" android:name=".AboutUsActivity">
+        </activity>
+        <activity android:label="@string/title_activity_data_view" android:name=".DataViewActivity">
+        </activity>
+        <activity android:label="@string/title_activity_data_sync" android:name=".DataSyncActivity">
+        </activity>
+        <activity android:label="@string/title_activity_log_in" android:name=".LogInActivity">
+        </activity>
+        <activity android:label="@string/title_activity_color_setting" android:name=".ColorSettingActivity">
+        </activity>
+        <activity android:label="@string/title_activity_screen_lock" android:name=".ScreenLockActivity">
+        </activity>
+
+        <!-- ###################注册SDK使用的Activity###################### -->
+        <!--分享编辑页-->
+        <activity
+            android:name="com.umeng.socialize.view.ShareActivity"
+            android:configChanges="orientation|keyboard"
+            android:launchMode="singleTask"
+            android:noHistory="true"
+            android:theme="@style/Theme.UMDialog"
+            android:windowSoftInputMode="stateVisible|adjustResize" >
+        </activity>
+
+        <!-- ############ QQ空间和QQ SSO授权的Activity注册 ############ -->
+        <activity
+            android:name="com.tencent.tauth.AuthActivity"
+            android:launchMode="singleTask"
+            android:noHistory="true" >
+        <intent-filter>
+        <action android:name="android.intent.action.VIEW" />
+
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="tencent100424468" />
+        </intent-filter>
+
+        </activity>
+        <activity android:name="com.tencent.connect.common.AssistActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <activity
+            android:name=".WXEntryActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:exported="true"
+            android:screenOrientation="portrait" />
+        <service
+            android:name="com.umeng.update.net.DownloadingService"
+            android:process=":DownloadingService" >
+        </service>
+        <activity
+            android:name="com.umeng.update.UpdateDialogActivity"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" >
+        </activity>
+
+        <activity android:name="com.umeng.fb.ConversationActivity"/>
+
+        <meta-data android:name="UMENG_APPKEY"
+        android:value="56022b9267e58e8dab000f7e"/>
+        <meta-data android:value="Channel ID" android:name="UMENG_CHANNEL"/>
+
+    <!--<activity android:configChanges="keyboardHidden|orientation|screenSize" android:exported="true" android:name=".wxapi.WXEntryActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>-->
+    </application>
+
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+</manifest>

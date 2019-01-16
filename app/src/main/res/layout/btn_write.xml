@@ -1,0 +1,23 @@
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/btns_margin"
+    android:layout_marginBottom="@dimen/btns_margin">
+
+    <com.andexert.library.RippleView
+        android:id="@+id/btn_write_ripple"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        rv_centered="true">
+
+    <Button
+        android:id="@+id/btn_write"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@drawable/ic_write"/>
+
+    </com.andexert.library.RippleView>
+
+</FrameLayout>

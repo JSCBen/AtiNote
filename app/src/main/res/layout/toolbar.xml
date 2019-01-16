@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:background="@color/colorPrimary"
+    app:layout_scrollFlags="scroll|enterAlways"
+    app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:popupTheme="@style/ThemeOverlay.AppCompat.Light" >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/btn_main_shake"
+            android:layout_width="@dimen/shake_icon_size"
+            android:layout_height="@dimen/shake_icon_size"
+            android:src="@drawable/icon_shake"
+            android:layout_marginRight="6dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:layout_toLeftOf="@id/btn_main_shake"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:text="@string/nav_item0"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.Toolbar>

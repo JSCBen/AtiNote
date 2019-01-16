@@ -1,0 +1,68 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/backgroundGray"
+    tools:context="com.tju.twist.atinote.AboutUsActivity">
+
+    <LinearLayout
+
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/toolbar_height"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary">
+
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/btn_dataSync_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/btns_margin"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/btn_back"/>
+
+        <TextView
+            android:layout_weight="10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/title_size"
+            android:text="@string/dataSync"/>
+
+        <TextView
+            android:id="@+id/btn_dataSync_send"
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:gravity="center"
+            android:textColor="@color/colorAccent"
+            android:textSize="@dimen/title_size"
+            android:text="发送"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:gravity="center_vertical"
+        android:text="@string/textView_dataSync"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="20dp"
+        android:textColor="@color/lightGray"/>
+
+    <EditText
+        android:inputType="textEmailAddress"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:singleLine="true"
+        android:gravity="center_vertical"
+        android:background="@color/white"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="@string/editText_dataSync"
+        android:textColor="@color/colorPrimary"/>
+
+</LinearLayout>
