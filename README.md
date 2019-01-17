@@ -4,5 +4,4 @@ AtiNote is an application published in [Application Market](https://sj.qq.com/my
 
 ![](images/1.png)
 
-![](images/preview.png)
 
